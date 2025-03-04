@@ -1,9 +1,9 @@
 import crypto from 'crypto';
 
-import { EnvVars } from '../../config';
-import { AliceBobPayload } from '../../interfaces/alice-bob.interfaces';
+import { EnvVars } from '../../../../config';
+import { AliceBobPayload } from '../../interfaces';
 
-export const getAliceBobSignature = (payload?: AliceBobPayload) => {
+export const getSignature = (payload?: AliceBobPayload) => {
   const now = Date.now();
   let initString = '';
 
